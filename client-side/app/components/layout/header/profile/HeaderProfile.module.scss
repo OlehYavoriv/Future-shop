@@ -1,0 +1,8 @@
+.button_toolbar {
+	@apply ml-3;
+	&__dropdown {
+		&_item {
+			@apply flex items-center text-sm;
+		}
+	}
+}
