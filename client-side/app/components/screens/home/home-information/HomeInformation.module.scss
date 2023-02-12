@@ -1,0 +1,18 @@
+.container {
+	&__customer {
+		@apply flex-col border-t-2 border-black py-14;
+	}
+	&__info {
+		@apply flex-col border-t-2 border-black;
+		&_title {
+			@apply mb-8 font-normal text-white;
+		}
+	}
+	&__text {
+		@apply text-white/60;
+	}
+}
+
+.amount {
+	@apply text-4xl font-normal text-white;
+}

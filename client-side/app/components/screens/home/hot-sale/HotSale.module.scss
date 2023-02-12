@@ -1,0 +1,24 @@
+.sale {
+	&__container {
+		@apply py-16 px-8 text-white;
+	}
+	&__upper_text {
+		@apply text-sm uppercase;
+	}
+	&__title {
+		@apply mt-5 mb-14 font-serif text-5xl font-normal uppercase;
+	}
+	&__new_price {
+		@apply mr-2 text-3xl font-normal;
+	}
+	&__old_price {
+		@apply text-sm line-through opacity-50;
+	}
+}
+
+.buy__btn {
+	@apply border-b border-white/20 text-sm uppercase;
+}
+.d_flex {
+	@apply flex items-center justify-between;
+}
