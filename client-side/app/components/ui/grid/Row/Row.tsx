@@ -1,14 +1,23 @@
 import cn from 'clsx'
 import { FC, PropsWithChildren } from 'react'
 
-const Row: FC<PropsWithChildren<{ className?: string }>> = ({
+interface IRow {
+	isBorder?: boolean
+	className?: string
+}
+
+const Row: FC<PropsWithChildren<IRow>> = ({
 	children,
-	className
+	className,
+	isBorder
 }) => {
 	return (
 		<div
 			className={cn(
-				'grid w-full grid-cols-12 border-b-2 border-solid border-black',
+				'grid w-full grid-cols-12',
+				{
+					'border-b-2 border-solid border-black': isBorder
+				},
 				className
 			)}
 		>
