@@ -24,3 +24,7 @@ body {
 .font-serif{
 	font-family: 'Playfair Display', serif;
 }
+
+.btn-link{
+	@apply border-b border-white/20 text-sm uppercase text-white tracking-widest;
+}
