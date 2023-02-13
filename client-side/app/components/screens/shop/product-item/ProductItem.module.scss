@@ -1,0 +1,17 @@
+.product {
+	&__wrapper {
+		@apply border-t-2;
+	}
+	&__container {
+		@apply pb-5 text-center text-white;
+	}
+	&__image {
+		@apply mb-4 flex items-center justify-center;
+	}
+	&__title {
+		@apply mb-2 font-serif text-lg;
+	}
+	&__price {
+		@apply mb-3;
+	}
+}
