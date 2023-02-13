@@ -8,7 +8,7 @@ import styles from './HeaderLogo.module.scss'
 
 const HeaderLogo: FC = () => {
 	return (
-		<Column size={2}>
+		<Column size={3}>
 			<Link href='/' className={styles.logo__link}>
 				<Image
 					src='/images/logo.png'
