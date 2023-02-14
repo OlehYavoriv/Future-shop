@@ -3,6 +3,9 @@ import { FC } from 'react'
 
 import Column from '@/ui/grid/Column/Column'
 
+import { useActions } from '@/hooks/useActions'
+import { useCart } from '@/hooks/useCart'
+
 import { IProduct } from '@/types/product.interface'
 
 import { formatToCurrency } from '@/utils/format-to-currency'
@@ -15,6 +18,12 @@ interface IProductItem {
 }
 
 const ProductItem: FC<IProductItem> = ({ index, product }) => {
+	const { cart } = useCart()
+	const { addToCart, removeFromCart } = useActions()
+
+	const currentElement = cart.find(
+		cartItem => cartItem.product.id === product.id
+	)
 	return (
 		<Column
 			size={index === 0 ? 3 : index === 4 ? 3 : 2}
@@ -33,7 +42,19 @@ const ProductItem: FC<IProductItem> = ({ index, product }) => {
 				<div className={styles.product__price}>
 					{formatToCurrency(product.price)}
 				</div>
-				<button className='btn-link'>Add to cart</button>
+				<button
+					className='btn-link'
+					onClick={() =>
+						currentElement
+							? removeFromCart({ id: currentElement.id })
+							: addToCart({
+									product,
+									quantity: 1
+							  })
+					}
+				>
+					{currentElement ? 'Remove from cart' : 'Add to cart'}
+				</button>
 			</div>
 		</Column>
 	)
