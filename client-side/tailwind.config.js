@@ -16,6 +16,9 @@ const constants = {
 module.exports = {
 	content: ['./pages/**/*.{js,ts,jsx,tsx}', './app/**/*.{js,ts,jsx,tsx}'],
 	theme: {
+		screens: {
+			'3xl': { max: '1600px' }
+		},
 		colors: {
 			transparent: colors.transparent,
 			...constants

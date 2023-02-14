@@ -1,4 +1,6 @@
-.bg_gradient {
+.row {
+	@apply 3xl:grid-cols-2;
+
 	background: rgb(114, 12, 14);
 	background: linear-gradient(
 		225deg,
