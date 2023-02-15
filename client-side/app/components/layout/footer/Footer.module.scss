@@ -1,0 +1,22 @@
+.footer {
+	@apply border-2 border-black text-white;
+	&__wrapper {
+		@apply py-[70px] px-[60px];
+	}
+	&__top_container {
+		@apply mb-[40px] flex items-center justify-between;
+	}
+	&__main_container {
+		@apply flex justify-between 1xl:flex-wrap 1xl:justify-center;
+	}
+	&__location_container {
+		@apply py-4 pl-10 1xl:py-10 1xl:pl-0;
+	}
+	&__title {
+		@apply mb-[100px] w-[40rem] font-serif text-5xl uppercase;
+	}
+}
+
+.circle__text {
+	@apply rotate-[-30deg] text-center text-sm font-medium uppercase;
+}

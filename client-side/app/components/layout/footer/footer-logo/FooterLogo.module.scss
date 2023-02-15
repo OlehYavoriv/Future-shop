@@ -1,0 +1,16 @@
+.logo {
+	&__link {
+		@apply flex items-center;
+	}
+	&__img {
+		@apply mr-1;
+	}
+	&__text {
+		&_upper {
+			@apply block font-light uppercase tracking-[0.1em] text-white;
+		}
+		&_lower {
+			@apply block text-sm font-extralight uppercase tracking-[0.45em] text-dark-gray;
+		}
+	}
+}
