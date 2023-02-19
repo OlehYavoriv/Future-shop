@@ -1,0 +1,35 @@
+.albom {
+	&__item {
+		@apply relative flex items-center justify-between p-14 text-white;
+		&:hover {
+			@apply bg-primary;
+			.image {
+				transition: all 1s ease-out;
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+	&__title {
+		@apply font-serif text-3xl uppercase;
+	}
+	&__number {
+		@apply text-sm;
+	}
+	&__data {
+		@apply text-right text-sm uppercase;
+	}
+}
+
+.image {
+	width: 200px;
+	height: 250px;
+	position: absolute;
+	top: -35px;
+	bottom: 0;
+	left: 10rem;
+	right: 0;
+	visibility: hidden;
+	opacity: 0;
+	transform: scale(1.1);
+}
