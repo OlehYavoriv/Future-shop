@@ -17,7 +17,8 @@ module.exports = {
 	content: ['./pages/**/*.{js,ts,jsx,tsx}', './app/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		screens: {
-			'3xl': { max: '1600px' }
+			'3xl': { max: '1600px' },
+			'1xl': { max: '1100px' }
 		},
 		colors: {
 			transparent: colors.transparent,
