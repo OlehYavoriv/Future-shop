@@ -67,3 +67,7 @@ body {
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 	background-color: $dark-gray;
 }
+
+.circle {
+	@apply flex h-[170px] w-[170px] items-center justify-center rounded-full border-2 border-black bg-primary p-6;
+}

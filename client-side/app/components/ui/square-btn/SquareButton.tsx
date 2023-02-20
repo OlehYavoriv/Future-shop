@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react'
+import { FC } from 'react'
 import { IconType } from 'react-icons'
 
 import styles from './SquareButton.module.scss'
