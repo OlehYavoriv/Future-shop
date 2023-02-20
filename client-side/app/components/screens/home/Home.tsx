@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
+import AlbomSection from '@/components/sections/Albom/albom-section/AlbomSection'
+
 import Layout from '@/layout/Layout'
 
 import Column from '@/ui/grid/Column/Column'
 import Row from '@/ui/grid/Row/Row'
-import Loader from '@/ui/loader/Loader'
+import Wrapper from '@/ui/wrapper/Wrapper'
 
 import styles from './Home.module.scss'
 import HomeInformation from './home-information/HomeInformation'
@@ -37,7 +39,9 @@ const Home: FC<IProductsPage> = ({ products }) => {
 					<HomeInformation />
 				</Column>
 			</Row>
-			<Loader />
+			<Wrapper>
+				<AlbomSection />
+			</Wrapper>
 		</Layout>
 	)
 }
