@@ -1,0 +1,28 @@
+.section {
+	@apply border-x-2 border-black p-[78px] text-white;
+	&__image {
+		@apply h-[500px] w-[100%] border-2 border-black object-cover;
+	}
+	&__description {
+		@apply mt-[45px] flex w-full items-center justify-between xl:flex-col;
+		&_text {
+			@apply w-[30%] text-xl font-medium  3xl:w-[40%] xl:w-full;
+		}
+	}
+	&__about_text {
+		@apply w-[40%] 3xl:w-[50%] xl:mt-2 xl:w-full;
+	}
+}
+
+.btn_link {
+	@apply relative border-b border-white/20 text-sm uppercase tracking-widest text-gray;
+
+	&::after {
+		content: '';
+		@apply absolute left-0 -bottom-0.5 h-0.5 w-0 bg-gray transition-all duration-300;
+	}
+
+	&:hover::after {
+		@apply w-full;
+	}
+}
