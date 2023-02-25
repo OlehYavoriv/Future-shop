@@ -28,3 +28,11 @@ model Review {
   productId Int      @map("product_id")
   product   Product  @relation(fields: [productId], references: [id])
 }
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String   @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+}
