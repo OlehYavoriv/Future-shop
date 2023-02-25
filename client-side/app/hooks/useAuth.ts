@@ -1,1 +1,3 @@
-export const useAuth = () => null
+import { useTypedSelector } from './useTypedSelector'
+
+export const useAuth = () => useTypedSelector(state => state.auth)
