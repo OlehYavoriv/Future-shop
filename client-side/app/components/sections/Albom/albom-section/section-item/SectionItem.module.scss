@@ -11,17 +11,18 @@
 		}
 	}
 	&__title {
-		@apply font-serif text-3xl uppercase;
+		@apply font-serif text-3xl uppercase lg:hidden;
 	}
 	&__number {
-		@apply text-sm;
+		@apply text-sm lg:hidden;
 	}
 	&__data {
-		@apply text-right text-sm uppercase;
+		@apply text-right text-sm uppercase lg:text-center lg:mx-auto;
 	}
 }
 
 .image {
+	@apply 2xl:hidden;
 	width: 200px;
 	height: 250px;
 	position: absolute;

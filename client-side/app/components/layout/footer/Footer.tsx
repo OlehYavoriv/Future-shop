@@ -25,22 +25,26 @@ const Footer: FC = () => {
 				</div>
 				<div className={styles.footer__main_container}>
 					<div className='pr-[2rem]'>
-						<h4 className={styles.footer__title}>
-							This is where your dreams come true, we do amazing!
-						</h4>
-						<div className='circle'>
-							<p className={styles.circle__text}>Subscribe to the news</p>
+						<div className='md:hidden'>
+							<h4 className={styles.footer__title}>
+								This is where your dreams come true, we do amazing!
+							</h4>
+							<div className='circle'>
+								<p className={styles.circle__text}>Subscribe to the news</p>
+							</div>
 						</div>
 
 						<FooterSocialNetwork />
 					</div>
 					<div className={styles.footer__location_container}>
-						<p className='mb-3'>
-							<a href='mailto:Future@gmail.com'>Future@gmail.com</a>
-						</p>
-						<p className='mb-14'>
-							<a href='tel:02156267635'>021 56 267 635</a>
-						</p>
+						<div className='md:hidden'>
+							<p className='mb-3'>
+								<a href='mailto:Future@gmail.com'>Future@gmail.com</a>
+							</p>
+							<p className='mb-14'>
+								<a href='tel:02156267635'>021 56 267 635</a>
+							</p>
+						</div>
 
 						<FooterShopLocation />
 					</div>
