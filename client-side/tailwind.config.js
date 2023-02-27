@@ -18,7 +18,11 @@ module.exports = {
 	theme: {
 		screens: {
 			'3xl': { max: '1600px' },
-			'1xl': { max: '1100px' }
+			'2xl': { max: '1300px' },
+			'1xl': { max: '1100px' },
+			'xl': { max: '900px' },
+			'lg': { max: '800px' },
+			'md': { max: '700px' }
 		},
 		colors: {
 			transparent: colors.transparent,
