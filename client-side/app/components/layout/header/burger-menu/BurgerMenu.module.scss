@@ -1,0 +1,15 @@
+.nav {
+	@apply hidden 3xl:block;
+	&__wrapper {
+		@apply mx-auto max-w-7xl px-2;
+	}
+	&__container {
+		@apply relative flex h-16 items-center justify-between;
+	}
+}
+.button {
+	@apply inline-flex items-center justify-center p-2;
+	&__container {
+		@apply absolute inset-y-0 left-0 flex items-center;
+	}
+}
