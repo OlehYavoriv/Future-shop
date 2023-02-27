@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
+import AboutSection from '@/components/sections/About/AboutSection'
 import AlbomSection from '@/components/sections/Albom/albom-section/AlbomSection'
+import PartnersSection from '@/components/sections/Partners/PartnersSection'
 
 import Layout from '@/layout/Layout'
 
@@ -27,6 +29,7 @@ const Home: FC<IProductsPage> = ({ products }) => {
 						alt='HotSale'
 						width={833}
 						height={727}
+						className={styles.img}
 					/>
 				</Column>
 				<Column
@@ -41,6 +44,10 @@ const Home: FC<IProductsPage> = ({ products }) => {
 			</Row>
 			<Wrapper>
 				<AlbomSection />
+			</Wrapper>
+			<AboutSection />
+			<Wrapper>
+				<PartnersSection />
 			</Wrapper>
 		</Layout>
 	)
