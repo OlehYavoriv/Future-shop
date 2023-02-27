@@ -1,5 +1,5 @@
 .wrapper {
-	@apply border-x-2 border-t-2 border-black px-[78px];
+	@apply border-x-2 border-y-2 border-black px-[78px];
 	&__inside_box {
 		@apply border-x-2 border-black bg-cod-gray;
 	}

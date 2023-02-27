@@ -9,7 +9,7 @@ interface IRow {
 const Row: FC<PropsWithChildren<IRow>> = ({
 	children,
 	className,
-	isBorder
+	isBorder = true
 }) => {
 	return (
 		<div

@@ -71,3 +71,7 @@ body {
 .circle {
 	@apply flex h-[170px] w-[170px] items-center justify-center rounded-full border-2 border-black bg-primary p-6;
 }
+
+.section__title {
+	@apply font-serif text-4xl uppercase text-white;
+}
