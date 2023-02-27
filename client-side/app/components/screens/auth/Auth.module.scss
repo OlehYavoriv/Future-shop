@@ -1,0 +1,9 @@
+.container {
+	@apply mt-32 flex flex-col items-center justify-center;
+	&__title {
+		@apply mb-10 text-2xl font-semibold;
+	}
+}
+.inputs {
+	@apply mb-3 block bg-dark-gray px-4 py-2 outline-none;
+}
